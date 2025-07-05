@@ -22,19 +22,20 @@
         /* Your existing CSS */
         * { box-sizing: border-box; }
         body {
-            margin: 0;
-            font-family: "Inter", sans-serif;
-            background-image: url(goku.png);
-            background-size: contain;
-            background-position: center center;
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-            background-color: #000;
-        }
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background-image: url(goku.png);
+    background-size: cover; /* Change this from 'contain' to 'cover' */
+    background-position: center center;
+    background-repeat: no-repeat; /* Keep this as no-repeat */
+    background-attachment: fixed; /* Add this to keep the background fixed while scrolling, if desired */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #000; /* fallback in case image doesn't fill fully */
+}
         .container {
             background-color: #ffffff80;
             backdrop-filter: blur(0.2px);
